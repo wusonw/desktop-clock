@@ -22,7 +22,8 @@
       },
       "window": {
         "startDragging": true,
-        "setIgnoreCursorEvents": true
+        "setIgnoreCursorEvents": true,
+        "setAlwaysOnTop": true
       }
     },
     "windows": [

@@ -3,7 +3,8 @@ import { nextTick, ref } from 'vue'
 import { appWindow } from '@tauri-apps/api/window';
 import { dataDir } from '@tauri-apps/api/path';
 
-appWindow.setIgnoreCursorEvents(true)
+// appWindow.setIgnoreCursorEvents(true)
+appWindow.setAlwaysOnTop(true)
 
 const dateTime = ref(new Date())
 const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六']
@@ -38,7 +39,7 @@ updateTime()
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgba(41, 20, 3, 0.218);
+  /* background-color: rgba(41, 20, 3, 0.218); */
   border-radius: 10px;
 
   .time {
