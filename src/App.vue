@@ -3,7 +3,7 @@ import { nextTick, ref } from 'vue'
 import { appWindow } from '@tauri-apps/api/window';
 import { dataDir } from '@tauri-apps/api/path';
 
-// appWindow.setIgnoreCursorEvents(true)
+appWindow.setIgnoreCursorEvents(true)
 appWindow.setAlwaysOnTop(true)
 
 const dateTime = ref(new Date())
