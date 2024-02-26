@@ -29,32 +29,44 @@ updateTime()
 
 <template>
   <div class="container" data-tauri-drag-region>
-    <div class="time">{{ parseTime(dateTime) }}</div>
-    <div class="date">{{ parseDate(dateTime) }}</div>
+    <div class="inner-box">
+      <div class="time">{{ parseTime(dateTime) }}</div>
+      <div class="date">{{ parseDate(dateTime) }}</div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .container {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(41, 20, 3, 0.218);
-  border-radius: 10px;
+  padding-right: 50px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.635);
 
-  .time {
-    text-align: center;
-    font-size: 72px;
-    color: white;
-    font-weight: bold;
+  ::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
   }
 
-  .date {
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
-    text-align: end;
-    padding: 0 20px;
+  .inner-box {
+    filter: drop-shadow(1px 1px 2px rgb(3, 3, 3));
+
+    .time {
+      text-align: end;
+      font-size: 72px;
+      font-weight: bold;
+    }
+
+    .date {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: end;
+    }
   }
+
+
 }
 </style>
