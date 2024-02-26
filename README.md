@@ -2,7 +2,7 @@
 
 > Tauri 桌面时钟
 
-![预览图](examples/image.png)
+![预览图](examples/capture02.png)
 
 时间仓促写的一个极简版本，未支持个性化定制，目前仅支持下载后，手动更改源码并重新构建来适配设备。
 
