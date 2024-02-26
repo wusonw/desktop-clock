@@ -39,7 +39,7 @@ updateTime()
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background-color: rgba(41, 20, 3, 0.218); */
+  background-color: rgba(41, 20, 3, 0.218);
   border-radius: 10px;
 
   .time {
